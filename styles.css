@@ -1,51 +1,145 @@
-body {
-    font-family: Arial, sans-serif;
+:root {
+    --color: rgb(169, 186, 204);
+    --accent-color: rgba(255, 70, 74, 0.7);
+    --background: linear-gradient(rgb(25, 27, 28) 0%, rgb(27, 29, 30) 100%);
+    --footer-height: 20px;
+    --primary-gradient-color: linear-gradient(0deg, rgba(221, 61, 64, 0.7) 0%, rgba(255, 70, 74, 0.7) 100%);
+    --primary-box-shadow: rgba(164, 22, 26, 0.25) 0px 17px 23px 0px;
+}
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    color: var(--color);
+    font-size: 8px;
+    font-family: 'Euclid Circular B', system-ui, sans-serif;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 520px) {
+
+    html,
+    body {
+        font-size: 10px;
+    }
+}
+
+
+h1 {
+    font-size: 8rem;
+    user-select: none;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+.accent-color,
+.accent-color a,
+.accent-color a:active {
+    color: var(--accent-color);
+}
+
+body {
+    min-height: 100vh;
+    background: var(--background);
+    padding-bottom: var(--footer-height);
 }
 
 header {
-    background-color: #333;
+    background: var(--primary-gradient-color);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    flex-direction: column;
+}
+
+header img {
+    height: 100%;
+}
+
+header nav {
+    width: 80%;
+    margin-left: 40px;
+    padding: 16px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+header nav a {
     color: #fff;
-    text-align: center;
-    padding: 20px 0;
+    font-size: 1.2rem;
+    font-family: 'Poppins', system-ui, sans-serif;
+    letter-spacing: 1px;
+    text-decoration: none;
+    position: relative;
+    text-transform: uppercase;
 }
 
-h1 {
-    margin: 0;
+header nav a::before {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    opacity: 0;
+    transition: 0.2s ease opacity;
 }
 
-section {
-    padding: 20px;
+header nav a:hover::before {
+    opacity: 1;
 }
 
-#about {
-    background-color: #f4f4f4;
+@media (min-width: 680px) {
+    header {
+        height: 80px;
+        flex-direction: row;
+    }
+
+    header nav {
+        padding: 0;
+    }
+
+    header nav ul {
+        flex-wrap: nowrap;
+    }
 }
 
-#skills {
-    background-color: #fff;
-}
-
-#projects {
-    background-color: #eee;
-}
-
-#contact {
-    background-color: #f9f9f9;
-}
-
-.project {
-    margin-bottom: 20px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+main {
+    padding-top: 4rem;
+    padding-left: 2.4rem;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: var(--primary-gradient-color);
+    padding: 6px;
+}
+
+main>section {
+    min-height: 250px;
+    padding-bottom: 100px;
+}
+
+main>section:first-child {
+    min-height: calc(100vh - 80px);
+}
+
+main>section:first-child h1 {
+    display: flex;
+    margin-top: 6vh;
 }
