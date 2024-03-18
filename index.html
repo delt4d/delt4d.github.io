@@ -1,103 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Meu Portfólio - Mas Não Exatamente</title>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meu Portfólio - Mas Não Exatamente</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.cdnfonts.com/css/euclid-circular-b"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.cdnfonts.com/css/euclid-circular-b" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-</head>
+    <body>
+        <header>
+            <a href="https://github.com/delt4d" class="avatar-link">
+                <img src="https://avatars.githubusercontent.com/u/77545660?v=4" />
+            </a>
 
-<body>
-    <header>
-        <a href='https://github.com/delt4d' class="avatar-link">
-            <img src="https://avatars.githubusercontent.com/u/77545660?v=4" />
-        </a>
+            <nav>
+                <ul>
+                    <li><a href="#welcome">Bem Vindo</a></li>
+                    <li><a href="#about">Sobre Mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <nav>
-            <ul>
-                <li><a href='#welcome'>Bem Vindo</a></li>
-                <li><a href='#about'>Sobre Mim</a></li>
-                <li><a href='#skills'>Habilidades</a></li>
-                <li><a href='#projects'>Projetos</a></li>
-                <li><a href='#contact'>Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+        <main>
+            <section id="welcome">
+                <h1 class="title">Olá, Seja Bem Vindo.</h1>
+                <h2 class="subtitle">
+                    Aqui, você pode ver sobre mim e minhas habilidades...
+                    <span class="accent-color">
+                        <a href="#about">Vamos começar?</a>
+                    </span>
+                </h2>
+                <div id="icons"></div>
+            </section>
 
-    <main>
-        <section id="welcome">
-            <h1 class="title">Olá, Seja Bem Vindo.</h1>
-            <h2 class="subtitle">
-                Aqui, você pode ver sobre mim e minhas habilidades...
-                <span class='accent-color'><a href="#about">Vamos começar?</a></span>
-            </h2>
-            <div id="icons"></div>
-        </section>
+            <section id="about">
+                <h2>Sobre Mim</h2>
+                <p>
+                    Estudante de Análise e Desenvolvimento de Sistemas - AMS
+                    (Articulação da Formação Profissional Média e Superior) na Fatec
+                    de Presidente Prudente.
+                </p>
+            </section>
 
-        <section id="about">
-            <h2>Sobre Mim</h2>
-            <p>Eu sou...</p>
-        </section>
+            <section id="skills">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML | CSS | JS</li>
+                    <li>.NET C#</li>
+                    <li>NodeJS</li>
+                    <li>Typescript</li>
+                    <li>MySQL | SQL Server</li>
+                    <li>Azure Devops</li>
+                </ul>
+            </section>
 
-        <section id="skills">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-            </ul>
-        </section>
+            <section id="projects">
+                <h2>Projetos</h2>
+                <div class="content">
+                    <div class="project">
+                        <h3>MVC TODO-LIST</h3>
 
-        <section id="projects">
-            <h2>Projetos</h2>
+                        <p>
+                            Todo list feito em HTML, CSS e JS utilizando uma
+                            arquitetura o mais próxima do MVC que o Front-End
+                            permite.
 
-            <div class="project">
-                <h3>Projeto 1</h3>
-                <p>Descrição do projeto 1.</p>
-            </div>
+                            <a
+                                target="_blank"
+                                href="https://github.com/delt4d/Threaded-Queue-Processor"
+                            >
+                                link
+                            </a>
+                        </p>
 
-            <div class="project">
-                <h3>Projeto 2</h3>
-                <p>Descrição do projeto 2.</p>
-            </div>
+                        <img
+                            src="https://raw.githubusercontent.com/delt4d/Todo-List/master/demo/page.png"
+                            alt="Imagem da tela principal do site"
+                        />
+                    </div>
 
-            <div class="project">
-                <h3>Projeto 3</h3>
-                <p>Descrição do projeto 3.</p>
-            </div>
+                    <div class="project">
+                        <h3>Threaded Queue Processor Library</h3>
 
-            <div class="project">
-                <h3>Projeto 4</h3>
-                <p>Descrição do projeto 4.</p>
-            </div>
+                        <p>
+                            Biblioteca em C# que permite a utilização de um fila com
+                            mecanismo thread-safe para processar itens
+                            concorrentemente.
 
-            <div class="project">
-                <h3>Projeto 5</h3>
-                <p>Descrição do projeto 5.</p>
-            </div>
-        </section>
+                            <a
+                                target="_blank"
+                                href="https://github.com/delt4d/Threaded-Queue-Processor"
+                            >
+                                link
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <section id="contact">
-            <h2>Contato</h2>
-            <p>
-                Você pode me contatar através do seguinte endereço de e-mail:
-                leandrogabrieldacruz717@gmail.com
-            </p>
-        </section>
-    </main>
+            <section id="contact">
+                <h2>Contato</h2>
+                <p>
+                    Você pode me contatar através do seguinte endereço de e-mail:
+                    leandrogabrieldacruz717@gmail.com
+                </p>
+            </section>
+        </main>
 
-    <footer>
-        <p>&copy;2024 - Leandro Gabriel da Cruz</p>
-    </footer>
+        <footer>
+            <p>&copy;2024 - Leandro Gabriel da Cruz</p>
+        </footer>
 
-    <script src="scripts.js"></script>
-</body>
-
+        <script src="scripts.js"></script>
+    </body>
 </html>
