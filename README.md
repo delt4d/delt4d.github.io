@@ -1,3 +1,1 @@
-# README
-
--   https://delt4d.github.io/
+# Academic project to make a portfolio.
